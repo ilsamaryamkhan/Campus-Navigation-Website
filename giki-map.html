@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIKI Campus Map</title>
+    <link rel="stylesheet" href="giki-map.css">
+</head>
+<body>
+   <!-- Header Section -->
+<header class="blue-border top-border">
+    <div class="logo-menu-container">
+        <img src="giki-logo.png" alt="GIKI Logo" class="giki-logo">
+        <nav>
+            <ul class="menu">
+                <li><a href="/Page1.html">Home</a></li>
+                <li><a href="/giki-map.html">GIKI Map</a></li>
+                <li><a href="/short.html">Path Finder</a></li>
+                <li><a href="/campus-life.html">Campus Life</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- About GIKI Location Section -->
+    <section id="about-giki">
+        <h1>About GIKI Location</h1>
+        <p>
+            Nestled in the serene hills of Topi, Swabi, Pakistan, the Ghulam Ishaq Khan Institute 
+            of Engineering Sciences and Technology (GIKI) is renowned for its state-of-the-art campus 
+            and breathtaking natural surroundings. GIKI is easily accessible and located at the heart 
+            of academic excellence in the region.
+        </p>
+        <img src="giki-image-full.webp" alt="GIKI Campus" class="giki-campus-image">
+    </section>
+
+    <!-- Explore GIKI Map Section -->
+<section id="explore-map">
+    <h2>Explore the GIKI Map</h2>
+    <button onclick="window.open('https://maps.google.com/?q=GIKI,Swabi,Pakistan', '_blank')">
+        View GIKI on Google Maps
+    </button>
+    <button onclick="window.open('https://app.lapentor.com/sphere/giki-1734633053?scene=67646c92e55e2ec121083482', '_blank')">
+        AR/VR View of GIKI
+    </button>
+</section>
+
+    <!-- Campus Map Section -->
+    <section id="campus-map">
+        <h2>Campus Map</h2>
+        <p>Click on any location to view it on Google Maps.</p>
+        <div id="location-container" class="location-grid"></div>
+    </section>
+
+    <!-- Add Your Location Section -->
+    <section id="add-location">
+        <h2>Add Your Location</h2>
+        <p>Click the button below to get your live location and a route to GIKI.</p>
+        <button onclick="showRouteToGIKI()">Get My Location & Route</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 GIKI Institute of Engineering Sciences and Technology. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="giki-map.js"></script>
+</body>
+</html>
