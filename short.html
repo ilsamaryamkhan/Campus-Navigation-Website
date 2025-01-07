@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path Finder - GIKI Map</title>
+  <link rel="stylesheet" href="short.css">
+</head>
+<body>
+  <!-- Top Border -->
+  <header class="blue-border top-border">
+    <div class="logo-menu-container">
+      <img src="giki-logo.png" alt="GIKI Logo" class="giki-logo">
+      <nav>
+        <ul class="menu">
+          <li><a href="/Page1.html">Home</a></li>
+          <li><a href="/giki-map.html">GIKI Map</a></li>
+          <li><a href="/short.html">Path Finder</a></li>
+          <li><a href="/campus-life.html">Campus Life</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <section class="input-section">
+      <h1>Find the Shortest Path</h1>
+      <form id="path-form">
+        <label for="start-point">Enter Starting Point:</label>
+        <input type="text" id="start-point" placeholder="e.g., Main_Gate" required>
+        
+        <label for="end-point">Enter Destination:</label>
+        <input type="text" id="end-point" placeholder="e.g., Clock_Tower" required>
+        
+        <button type="submit">Calculate Path</button>
+      </form>
+    </section>
+
+    <section class="output-section">
+      <h2>Path Results</h2>
+      <div id="path-output">
+        <!-- Results will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Bottom Border -->
+  <footer class="blue-border bottom-border">
+    <p>&copy; 2024 GIKI Institute. All rights reserved.</p>
+  </footer>
+
+  <!-- Link JavaScript -->
+  <script src="short.js"></script>
+</body>
+</html>
