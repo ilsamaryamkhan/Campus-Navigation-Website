@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #004080; /* GIKI blue color */
+}
+
+p {
+  color: #333;
+}
+
+/* Blue Borders */
+.blue-border {
+  background-color: #004080;
+}
+
+.top-border {
+  height: 40px;
+  width: 100%;
+}
+
+.bottom-border {
+  height: 40px;
+  width: 100%;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo-menu-container {
+  display: flex;
+  align-items: center;
+}
+
+.giki-logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Video Section */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+}
+
+#giki-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Section Layout */
+.sections-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.stylish-section {
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  text-align: center;
+}
+
+.stylish-section#home {
+  width: 80%; /* Reduced width for the Welcome to GIKI box */
+  max-width: 1023px; /* Optional: Limit the maximum width */
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap sections on smaller screens */
+  justify-content: center; /* Center the grid */
+  gap: 20px;
+}
+
+.grid-container .stylish-section {
+  width: 300px; /* Fixed width for the three sections */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+}
